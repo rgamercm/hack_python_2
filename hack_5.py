@@ -8,7 +8,7 @@ text: "eq" output => "eq"
 """
 
 
-def fn_hack_5():
-    result = "fooziman"
+def fn_hack_5(s):
+    result = s
     #...
     return result
