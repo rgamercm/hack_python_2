@@ -7,7 +7,7 @@ text: "qux" output => "qux"
 """
 
 
-def fn_hack_4():
-    result = "fooziman"
+def fn_hack_4(s):
+    result = s
     #...
     return result
