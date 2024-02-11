@@ -9,7 +9,7 @@ text: [] output => [0]
 """
 
 
-def fn_hack_7():
-    result = ["a","b","c","d","e"]
+def fn_hack_7(s):
+    result = s
     #...
     return result
