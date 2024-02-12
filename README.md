@@ -24,6 +24,12 @@
 ```
 <br/>
 
+#### 🎬 Clone Repo + Instalar requirements
+![](https://github.com/SocialOplesk/hack_python_2/blob/main/hack_python_2_install_gif.gif)
+
+
+<br/>
+
 |Hacks | Details | 
 |----------|---------|
 | H-1      | 3 match |
@@ -39,6 +45,10 @@
 <br/> 
 
 ## 🏆 H-1
+🎬 Cómo resolver el hack y adicional ejecutar el testing, para validar el hack.
+
+![](https://github.com/SocialOplesk/hack_python_2/blob/main/hack_python_2_run_gif.gif)
+
 
 ```sh
 generic script
