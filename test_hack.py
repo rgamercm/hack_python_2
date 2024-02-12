@@ -13,130 +13,61 @@ import pytest
 
 
 
-# hack-1
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_1("fooziman"),"fOozIman"),
-     (fn_hack_1("qux"),"qUx"),
-     (fn_hack_1("eq"),"eq"),
-    ]
-)
-def test_hack_1(input, expected):
-    assert input == expected
+def test_hack_1():
+    assert fn_hack_1("fooziman") == "fOozIman"
+    assert fn_hack_1("qux") == "qUx"
+    assert fn_hack_1("eq") == "eq"
 
 
-# hack-2
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_2("fooziman"),"fzmn"),
-     (fn_hack_2("barziman"), "brzmn"),
-     (fn_hack_2("qux"),"qx"),
-    ]
-)
-def test_hack_2(input, expected):
-    assert input == expected
+def test_hack_2():
+    assert fn_hack_2("fooziman") == "fzmn"
+    assert fn_hack_2("barziman") == "brzmn"
+    assert fn_hack_2("qux") == "qx"
 
 
-# hack-3
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_3("fooziman"),"F00z¡m@N"),
-     (fn_hack_3("barziman"), "B@rz¡m@N"),
-     (fn_hack_3("3q"),"3Q"),
-     (fn_hack_3("qu"),"Qv"),
-     (fn_hack_3("qux"),"QvX"),
-    ]
-)
-def test_hack_3(input, expected):
-    assert input == expected
+def test_hack_3():
+    assert fn_hack_3("fooziman") == "F00z¡m@N"
+    assert fn_hack_3("barziman") == "B@rz¡m@N"
+    assert fn_hack_3("3q") == "3Q"
+    assert fn_hack_3("qu") == "Qv"
+    assert fn_hack_3("qux") == "QvX"
 
 
-# hack-4
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_4("fooziman"),"oozima"),
-     (fn_hack_4("barziman"), "arzima"),
-     (fn_hack_4("qux"),"qux"),
-    ]
-)
-def test_hack_4(input, expected):
-    assert input == expected
+def test_hack_4():
+    assert fn_hack_4("fooziman") == "oozima"
+    assert fn_hack_4("barziman") == "arzima"
+    assert fn_hack_4("qux") == "qux"
 
 
-# hack-5
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_5("fooziman"),"fo-zi-ma-"),
-     (fn_hack_5("barziman"), "ba-zi-an"),
-     (fn_hack_5("qu-"),"qu-"),
-     (fn_hack_5("eq"),"eq"),
-    ]
-)
-def test_hack_5(input, expected):
-    assert input == expected
+def test_hack_5():
+    assert fn_hack_5("fooziman") == "fo-zi-ma-"
+    assert fn_hack_5("barziman") == "ba-zi-an"
+    assert fn_hack_5("qu-") == "qu-"
+    assert fn_hack_5("eq") == "eq"
 
 
-# hack-6
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_6(["a","b","c","d","e"]),["1","-","3","-","5"]),
-     (fn_hack_6([] ), ["0"] ),
-    ]
-)
-def test_hack_6(input, expected):
-    assert input == expected
+def test_hack_6():
+    assert fn_hack_6(["a","b","c","d","e"]) == ["1","-","3","-","5"]
+    assert fn_hack_6([]) == ["0"]
 
 
-# hack-7
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_7(["a","b","c","d","e"]),["1",2,"3",4,"5"]),
-     (fn_hack_7([0]), [0] ),
-    ]
-)
-def test_hack_7(input, expected):
-    assert input == expected
+def test_hack_7():
+    assert fn_hack_7(["a","b","c","d","e"]) == ["1",2,"3",4,"5"]
+    assert fn_hack_7([0]) == [0]
 
 
-# hack-8
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_8(["a","b","c","d","e"]),["e-5","d-4","c-3","b-2","a-1"]),
-     (fn_hack_8(["a","b","c"]), ["c-3","b-2","a-1"]),
-     (fn_hack_8(["a","b","c","d"]), ["4","3","2","1"]),
-     (fn_hack_8(["a","b"]), ["2","1"]),
-    ]
-)
-def test_hack_8(input, expected):
-    assert input == expected
+def test_hack_8():
+    assert fn_hack_8(["a","b","c","d","e"]) == ["e-5","d-4","c-3","b-2","a-1"]
+    assert fn_hack_8(["a","b","c"]) == ["c-3","b-2","a-1"]
+    assert fn_hack_8(["a","b","c","d"]) == ["4","3","2","1"]
+    assert fn_hack_8(["a","b"]) == ["2","1"]
 
 
-# hack-9
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_9({"foo":"fookziman","bar":"barziman"}), {"Foo":"Fooziman"}),
-    ]
-)
-def test_hack_9(input, expected):
-    assert input == expected
+def test_hack_9():
+    assert fn_hack_9({"foo":"fookziman","bar":"barziman"}) == {"Foo":"Fooziman"}
 
 
-# hack-10
-@pytest.mark.parametrize(
-    "input,expected",
-    [
-     (fn_hack_10([{"a":"b"},{"c","d"},{"e":"f"}]), [{"1":"2"},{"3","4"},{"5":"6"}])
-    ]
-)
-def test_hack_10(input, expected):
-    assert input == expected
+def test_hack_10():
+    assert fn_hack_10([{"a":"b"},{"c","d"},{"e":"f"}]) == [{"1":"2"},{"3","4"},{"5":"6"}]
+
 
