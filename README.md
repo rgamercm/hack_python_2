@@ -21,6 +21,9 @@
   pytest test_hack.py -v (ejecuta todos los test)
   pytest test_hack.py::test_hack_1 (ejecuta un test en específico)
   pytest test_hack.py::test_hack_3 -v (ejecuta un test en específico)
+
+  ✔ NOTA: en caso de no reconocer el comando "pytest"
+          ejecutar el pytest así: python -m pytest test_hack.py -v
 ```
 <br/>
 
