@@ -5,7 +5,7 @@ generic script
 [0] => type int
 
 text: ["a","b","c","d","e"] output => ["1",2,"3",4,"5"]
-text: [] output => [0] 
+text: [0] output => [0] 
 """
 
 
