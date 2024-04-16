@@ -1,3 +1,4 @@
+import pytest
 from hack_1 import fn_hack_1
 from hack_2 import fn_hack_2
 from hack_3 import fn_hack_3
@@ -9,7 +10,7 @@ from hack_8 import fn_hack_8
 from hack_9 import fn_hack_9
 from hack_10 import fn_hack_10
 #
-import pytest
+
 
 
 

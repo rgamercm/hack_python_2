@@ -10,5 +10,18 @@ text: ["a","b"] output => ["2","1"]
 
 def fn_hack_8(s):
     result = s
-    #...
+    ls = []
+    par_impar = len(result) % 2
+    if par_impar == 0:
+        for indice, elemento in enumerate(result):
+            ls.append(str(indice + 1))
+        ls.reverse()
+    if par_impar == 1:
+        for num, elem in enumerate(result):
+            ls.append(f"{elem}-{num + 1}")
+        ls.reverse()
+    result = ls
     return result
+
+x = fn_hack_8(["a","b","c","d"])
+print(x)
